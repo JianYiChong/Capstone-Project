@@ -21,7 +21,7 @@ selected = option_menu(
 # Home Section
 if selected == "Home":
     st.title("Welcome to the Home Page")
-    st.title("This is the home page of the app.")
+   
 
 # Product Suggestion Section
 if selected == "Product Suggestion":
@@ -37,7 +37,7 @@ if selected == "Product Suggestion":
 
 # Upload Section
 elif selected == "Upload":
-    st.title("Upload Section")
+    st.title("Upload the image of the product you wish to search for")
     uploaded_file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
     if uploaded_file is not None:
         st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
