@@ -9,19 +9,14 @@ client = OpenAI(api_key = os.environ['OPENAI_API_KEY'])
 
 
 # Create a horizontal navigation menu
-selected = option_menu(
-    menu_title="Main Menu",
-    options=["Home", "Product", "Upload", "Email"],
-    icons=["house", "search", "cloud-upload", "email"],
-    menu_icon="cast",
-    default_index=0,
-    orientation="horizontal",
-)
+with st.sidebar:
+    selected = option_menu("Main Menu", ["Home", "Product","Upload", "Email"], 
+        icons=['house', 'search', 'cloud-upload', 'email'], menu_icon="cast", default_index=1)
 
 # Home Section
 if selected == "Home":
     st.title("Welcome to the Home Page")
-    st.title("This is the home page of the app.")
+    st.write("This is the home page of the app.")
 
 # Product Suggestion Section
 if selected == "Product Suggestion":
@@ -33,7 +28,7 @@ if selected == "Product Suggestion":
     usage = st.text_input("Enter the usage:")
     requirement = st.text_input("Enter the requirement:")
 
-   
+
 
 # Upload Section
 elif selected == "Upload":
