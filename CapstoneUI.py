@@ -27,7 +27,7 @@ if selected == "Product Suggestion":
 
     # Input fields for product suggestion
     product = st.text_input("What product/package do you want:")
-    budget = st.text_input("Enter your budget:")
+    budget = st.text_input("Enter your budget(USD):")
     usage = st.text_input("Enter the usage:")
     requirement = st.text_input("Enter the requirement:")
     
