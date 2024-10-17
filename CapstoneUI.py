@@ -7,25 +7,19 @@ from streamlit_option_menu import option_menu
 
 client = OpenAI(api_key = os.environ['OPENAI_API_KEY'])
 
-
 # Create a horizontal navigation menu
 selected = option_menu(
     menu_title="Main Menu",
     options=["Home", "Product Suggestion", "Upload", "Email"],
-    icons=["house", "search", "cloud-upload", "email"],
+    icons=["house", "search", "cloud-upload", "envelope"],
     menu_icon="cast",
     default_index=0,
     orientation="horizontal",
 )
-
 # Home Section
 if selected == "Home":
     st.title("Welcome to the Home Page")
     st.image("ITdevices.jpg", use_column_width=True)
-
-
-
-   
 
 # Product Suggestion Section
 if selected == "Product Suggestion":
@@ -37,9 +31,6 @@ if selected == "Product Suggestion":
     usage = st.text_input("Enter the usage:")
     requirement = st.text_input("Enter the requirement:")
     
-
-   
-
 # Upload Section
 elif selected == "Upload":
     st.title("Upload the image of the product you wish to search for")
