@@ -44,7 +44,7 @@ elif selected == "Upload":
 
 # Email Section
 if selected == "Email":
-    st.title("Enter Email Section")
+    st.title("Email")
     email = st.text_input("Enter your email:")
     if st.button("Submit"):
         st.write(f"Email submitted: {email}")
