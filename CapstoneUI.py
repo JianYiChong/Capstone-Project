@@ -11,7 +11,7 @@ client = OpenAI(api_key = os.environ['OPENAI_API_KEY'])
 # Create a horizontal navigation menu
 selected = option_menu(
     menu_title="Main Menu",
-    options=["Home", "Product", "Upload", "Email"],
+    options=["Home", "Product Suggestion", "Upload", "Email"],
     icons=["house", "search", "cloud-upload", "email"],
     menu_icon="cast",
     default_index=0,
