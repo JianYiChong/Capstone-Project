@@ -21,7 +21,9 @@ selected = option_menu(
 # Home Section
 if selected == "Home":
     st.title("Welcome to the Home Page")
-    st.image("path/to/your/ITdevices.jpg", caption="Welcome Image", use_column_width=True)
+    st.image("ITdevices.jpg", caption="Welcome Image", use_column_width=True)
+
+
 
    
 
