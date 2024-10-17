@@ -32,6 +32,7 @@ if selected == "Product Suggestion":
     budget = st.text_input("Enter your budget:")
     usage = st.text_input("Enter the usage:")
     requirement = st.text_input("Enter the requirement:")
+    
 
    
 
